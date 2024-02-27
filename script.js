@@ -18,14 +18,14 @@ function startGame() {
     let result = false
     btnCheck.addEventListener("click", () => {
         if (textInput.value === "") {
-            showResult("Please enter some text.")
+            showResult("Please enter some text :)")
         }
         else {
             result = isPalindrome(textInput.value)
         if (result) {
-            showResult("This is a palindrome!");
+            showResult(`${textInput.value} is a palindrome! :D`);
         } else {
-            showResult('This is not a palindrome')
+            showResult(`${textInput.value} is not a palindrome! :(`)
         }
         }
         
